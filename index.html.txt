@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人主页</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+            background-color: #f0f8ff;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        p {
+            color: #34495e;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>👋 你好，我是 jpiliutao</h1>
+    <p>欢迎来到我的 GitHub Pages 主页！</p>
+    <p>这是我用 GitHub Pages 搭建的第一个网站 🚀</p>
+</body>
+</html>

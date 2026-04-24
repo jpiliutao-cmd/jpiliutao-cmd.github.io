@@ -3,77 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的个人主页</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: "Segoe UI", sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-
-        .card {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            padding: 50px 40px;
-            border-radius: 20px;
-            box-shadow: 0 8px 32px rgba(0,0,0,0.2);
-            max-width: 500px;
-            width: 100%;
-        }
-
-        h1 {
-            font-size: 36px;
-            margin-bottom: 20px;
-        }
-
-        p {
-            font-size: 18px;
-            margin-bottom: 10px;
-            opacity: 0.9;
-        }
-
-        .github {
-            margin-top: 30px;
-            display: inline-block;
-            padding: 12px 24px;
-            background: white;
-            color: #764ba2;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 16px;
-            transition: 0.3s;
-        }
-
-        .github:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-        }
-    </style>
+    <title>首页 | 我的个人网站</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div class="card">
-        <h1>👋 你好，我是 jpiliutao</h1>
-        <p>正在学习编程、Git、GitHub</p>
-        <p>这是我用 GitHub Pages 搭建的第二个网站 </p>
-        <p>好好学习，天天进步～</p>
+    <!-- 导航栏 -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">我的主页</a>
+            <div class="nav-links">
+                <a href="index.html" class="active">首页</a>
+                <a href="about.html">关于我</a>
+                <a href="projects.html">我的项目</a>
+            </div>
+        </div>
+    </nav>
 
-        <a href="https://github.com/jpiliutao-cmd" target="_blank" class="github">
-            访问我的第一个 GitHub
-        </a>
+    <!-- 首页内容 -->
+    <div class="container">
+        <div class="card" style="text-align: center;">
+            <h1>👋 你好，我是 jpiliutao</h1>
+            <p>欢迎来到我的个人网站！</p>
+            <p>这里记录了我的学习、项目和成长过程。</p>
+            <a href="about.html" class="btn">了解更多</a>
+        </div>
     </div>
 </body>
 </html>

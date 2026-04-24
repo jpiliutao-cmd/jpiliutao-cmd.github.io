@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>意见反馈 | jpiliutao 的个人网站</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .form-item{
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        label{
+            display: block;
+            margin-bottom: 8px;
+        }
+        input,textarea,select{
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            border: none;
+            outline: none;
+            font-size: 16px;
+            background: rgba(255,255,255,0.9);
+            color: #333;
+        }
+        textarea{
+            resize: vertical;
+            min-height: 120px;
+        }
+        .submit-btn{
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">jpiliutao 的主页</a>
+            <div class="nav-links">
+                <a href="index.html">首页</a>
+                <a href="about.html">关于我</a>
+                <a href="projects.html">我的项目</a>
+                <a href="feedback.html" class="active">意见反馈</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="card">
+            <h1>📝 意见反馈</h1>
+            <p>欢迎提出建议、报错问题、交流想法，我会及时查看回复。</p>
+
+            <form action="https://formsubmit.co/330431083@qq.com" method="POST">
+                <div class="form-item">
+                    <label>你的昵称</label>
+                    <input type="text" name="name" placeholder="请输入昵称" required>
+                </div>
+                <div class="form-item">
+                    <label>联系方式（选填）</label>
+                    <input type="text" name="contact" placeholder="QQ / 邮箱 / 微信">
+                </div>
+                <div class="form-item">
+                    <label>反馈类型</label>
+                    <select name="type">
+                        <option value="网站建议">网站建议</option>
+                        <option value="BUG报错">BUG报错</option>
+                        <option value="技术交流">技术交流</option>
+                        <option value="其他">其他</option>
+                    </select>
+                </div>
+                <div class="form-item">
+                    <label>详细内容</label>
+                    <textarea name="message" placeholder="请详细描述你的想法..." required></textarea>
+                </div>
+
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_subject" value="来自个人网站的新反馈">
+                <button class="btn submit-btn" type="submit">提交反馈</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
